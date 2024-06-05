@@ -109,8 +109,9 @@ def dynamic_programming_algorithm(dataframe):
     return selected_opportunities, total_revenue
 
 
-# Run the main function with the greedy algorithm by setting override to True.
-selected_ops, total_rev = main("servicing_options.csv", algorithm="dp")
+# Run the main function with the provided CSV file.
+# OPTIONAL: Override the algorithm by passing algorithm="greedy" or algorithm="dp".
+selected_ops, total_rev = main("servicing_options.csv")
 
 # Output the total revenue and the number of opportunities selected.
 print(f"Total Revenue: {total_rev} USD, Total Opportunities: {len(selected_ops)}")
